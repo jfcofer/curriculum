@@ -1,0 +1,16 @@
+/* Base resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Utility classes */
+.u-center {
+  text-align: center;
+}
+
+.container {
+  width: min(90%, 1000px);
+  margin-inline: auto;
+}

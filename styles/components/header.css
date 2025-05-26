@@ -1,0 +1,35 @@
+/* Section: Header */
+.header {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Element: header__title */
+.header__title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Element: Navigation */
+.navbar__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  width: 100%;
+  gap: 1rem;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: var(--color-on-primary-container);
+  position: relative;
+  padding: 1rem;
+  background-color: var(--color-primary-container);
+}
+
+.navbar__link:hover {
+  background-color: var(--color-secondary-container);
+}

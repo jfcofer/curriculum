@@ -1,98 +1,321 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="CV, Curriculum Vitae, Nombre Apellido, Experiencia, Educación"
+    />
+    <meta
+      name="description"
+      content="CV, Curriculum Vitae, Nombre Apellido, Experiencia, Educación"
+    />
+    <meta name="author" content="Juan Fernández" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
+    <link rel="stylesheet" href="styles/components/header.css" />
+    <link rel="stylesheet" href="styles/components/section.css" />
+    <link rel="stylesheet" href="styles/components/footer.css" />
+    <title>My CV | Juan Fernández</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="keywords" content="CV, Curriculum Vitae, Nombre Apellido, Experiencia, Educación">
-  <meta name="description" content="CV, Curriculum Vitae, Nombre Apellido, Experiencia, Educación">
-  <meta name="author" content="Juan Fernández" />
-  <meta name="robots" content="index, follow" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My CV | Juan Fernández</title>
-</head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Juan Fernández</h1>
 
-<body>
-  <header>
-    <h1>Juan Fernández</h1>
-    <p>Desarrollador Web</p>
-    <p>Email: <a href="mailto:">jfrancisco.fernandez.ramos@gmail.com</a></p>
-    <nav>
-      <ul>
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#experience">Experiencia</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#education">Educación</a></li>
-        <li><a href="#certs">Certificaciones y Reconocimientos</a></li>
-        <li><a href="#references">Referencias</a></li>
-      </ul>
-    </nav>
-  </header>
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link" href="#about">Sobre mí</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#skills">Habilidades</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#experience">Experiencia</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#projects">Proyectos</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#education">Educación</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#certs"
+              >Certificaciones y Reconocimientos</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#references">Referencias</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <section id="about">
-      <h2>Sobre mí</h2>
-      <p>
-        Hola, soy Juan Fernández, un apasionado desarrollador web con experiencia en la creación de aplicaciones
-        interactivas y dinámicas. Me encanta aprender nuevas tecnologías y mejorar mis habilidades constantemente.
-      </p>
-    </section>
+    <main>
+      <section id="about" class="about">
+        <h2>Sobre mí</h2>
+        <section class="photo">
+          <div class="photo__container">
+            <img
+              class="photo__image"
+              src="assets/photo.jpg"
+              alt="Foto de Juan Fernández"
+            />
+          </div>
+        </section>
+        <p>
+          Hola, soy Juan Fernández, un apasionado desarrollador web con
+          experiencia en la creación de aplicaciones interactivas y dinámicas.
+          Me encanta aprender nuevas tecnologías y mejorar mis habilidades
+          constantemente.
+        </p>
+      </section>
 
-    <section id="skills">
-      <h2>Habilidades</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque non molestias itaque veniam optio cupiditate
-        deleniti inventore. Excepturi, qui, minima possimus doloremque, consequatur in maiores animi ducimus officia
-        omnis et.</p>
-    </section>
+      <section id="skills">
+        <h2>Habilidades</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque non
+          molestias itaque veniam optio cupiditate deleniti inventore.
+          Excepturi, qui, minima possimus doloremque, consequatur in maiores
+          animi ducimus officia omnis et.
+        </p>
+      </section>
 
-    <section id="experience">
-      <h2>Experiencia Laboral</h2>
-      <ol>
-        <li>
-          <h3>Ayudante de Investigación</h3>
-          <p>Fecha de inicio - Fecha de finalización</p>
-          <p>Descripción de las responsabilidades y logros.</p>
-        </li>
-        <li>
-          <h3>Desarrollador Frontend en ABC Corp</h3>
-          <p>Fecha de inicio - Fecha de finalización</p>
-          <p>Descripción de las responsabilidades y logros.</p>
-        </li>
-      </ol>
-    </section>
+      <section id="experience">
+        <h2>Experiencia Laboral</h2>
+        <ol>
+          <li>
+            <h3>Ayudante de Investigación</h3>
+            <p>Fecha de inicio - Fecha de finalización</p>
+            <p>Descripción de las responsabilidades y logros.</p>
+          </li>
+          <li>
+            <h3>Desarrollador Frontend en ABC Corp</h3>
+            <p>Fecha de inicio - Fecha de finalización</p>
+            <p>Descripción de las responsabilidades y logros.</p>
+          </li>
+        </ol>
+      </section>
 
-    <section id="projects">
-      <h2>Proyectos</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus neque in optio recusandae. At fuga
-        asperiores laborum qui. Dolor consequuntur adipisci nesciunt laudantium ex error, quasi doloremque eius vero
-        eligendi.</p>
-    </section>
+      <section id="projects">
+        <h2>Proyectos</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          neque in optio recusandae. At fuga asperiores laborum qui. Dolor
+          consequuntur adipisci nesciunt laudantium ex error, quasi doloremque
+          eius vero eligendi.
+        </p>
+      </section>
 
-    <section id="education">
-      <h2>Educación</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo esse distinctio quia eaque quaerat enim!
-        Nobis animi numquam officia corrupti iusto perspiciatis sed suscipit at doloribus, vitae eveniet unde labore.
-      </p>
-    </section>
+      <section id="education">
+        <h2>Educación</h2>
+        <table class="cv-table cv-table--borderless">
+          <thead class="cv-table__head">
+            <tr class="cv-table__row">
+              <th class="cv-table__cell cv-table__cell--header">Year</th>
+              <th class="cv-table__cell cv-table__cell--header">Institution</th>
+              <th class="cv-table__cell cv-table__cell--header">Degree</th>
+            </tr>
+          </thead>
+          <tbody class="cv-table__body">
+            <tr class="cv-table__row">
+              <td class="cv-table__cell">2021–2025</td>
+              <td class="cv-table__cell">ESPOL, Guayaquil</td>
+              <td class="cv-table__cell">B.Sc. Computer Science</td>
+            </tr>
+            <tr class="cv-table__row">
+              <td class="cv-table__cell">2019–2021</td>
+              <td class="cv-table__cell">
+                Unidad Educativa Bernardino Echeverria
+              </td>
+              <td class="cv-table__cell">High School Diploma</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-    <section id="certs">
-      <h2>Certificaciones y Reconocimientos</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus neque in optio recusandae. At fuga
-        asperiores laborum qui. Dolor consequuntur adipisci nesciunt laudantium ex error, quasi doloremque eius vero
-        eligendi.</p>
-    </section>
+      <section id="certs">
+        <h2>Certificaciones y Reconocimientos</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          neque in optio recusandae. At fuga asperiores laborum qui. Dolor
+          consequuntur adipisci nesciunt laudantium ex error, quasi doloremque
+          eius vero eligendi.
+        </p>
+      </section>
 
-    <section id="references">
-      <h2>Referencias</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus neque in optio recusandae. At fuga
-        asperiores laborum qui. Dolor consequuntur adipisci nesciunt laudantium ex error, quasi doloremque eius vero
-        eligendi.</p>
-    </section>
-  </main>
+      <section id="references">
+        <h2>Referencias</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          neque in optio recusandae. At fuga asperiores laborum qui. Dolor
+          consequuntur adipisci nesciunt laudantium ex error, quasi doloremque
+          eius vero eligendi.
+        </p>
+      </section>
+      <section id="contact">
+        <h2>Contacto</h2>
+        <ul>
+          <li><strong>Email:</strong> jfrancisco.fernandez.ramos@gmail.com</li>
+          <li><strong>Telephone:</strong> +593 81 3030 74</li>
+          <li>
+            <strong>Ubicacion:</strong> Guayaquil, Ecuador
+            <section class="contact-map">
+              <div class="map__container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0151793696036!2d-79.96714432574477!3d-2.147874837173273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Politecnica%20del%20Litoral!5e0!3m2!1sen!2sec!4v1747680061345!5m2!1sen!2sec"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="map-info">
+                <p>
+                  Escuela Superior Politécnica del Litoral <br />
+                  Guayaquil, Ecuador
+                </p>
+              </div>
+            </section>
+          </li>
+        </ul>
+        <form class="contact-section__form" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Tu nombre"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Tu email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Tu mensaje"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn">Enviar Mensaje</button>
+        </form>
+        <section class="video">
+          <div class="video__container">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/toPYhYAd_JY?si=IdHJjCSBTtyLjl5l"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+      </section>
+      <section id="referencias" class="references">
+        <h2 class="references__title">Referencias</h2>
+        <div class="carousel">
+          <input
+            type="radio"
+            name="carousel"
+            id="carousel__slide1"
+            class="carousel__toggle"
+            checked
+          />
+          <input
+            type="radio"
+            name="carousel"
+            id="carousel__slide2"
+            class="carousel__toggle"
+          />
+          <input
+            type="radio"
+            name="carousel"
+            id="carousel__slide3"
+            class="carousel__toggle"
+          />
 
-  <footer>
-    <p>&copy; 2025 Juan Fernández. Todos los derechos reservados.</p>
-  </footer>
-</body>
+          <div class="carousel__slides">
+            <div class="carousel__slide">
+              <blockquote class="carousel__quote">
+                "Andrea hizo un trabajo excepcional en nuestro proyecto de
+                análisis de datos, aportando insights clave."
+              </blockquote>
+              <p class="carousel__person">
+                <strong>Dr. Carla Méndez</strong>, Directora de Investigación,
+                Universidad de Guayaquil. Colaboré con Andrea en un estudio de
+                comportamiento del consumidor, donde demostró gran capacidad
+                analítica.
+              </p>
+            </div>
+            <div class="carousel__slide">
+              <blockquote class="carousel__quote">
+                "La dedicación y el profesionalismo de Andrea elevaron el
+                estándar de nuestras herramientas de BI."
+              </blockquote>
+              <p class="carousel__person">
+                <strong>Ing. Luis Pérez</strong>, Jefe de BI, TIA Supermercados.
+                Trabajamos juntos en la optimización del dashboard financiero
+                que redujo tiempos de reporte en 50%.
+              </p>
+            </div>
+            <div class="carousel__slide">
+              <blockquote class="carousel__quote">
+                "Su enfoque innovador en visualización de datos transformó la
+                forma en que presentamos resultados."
+              </blockquote>
+              <p class="carousel__person">
+                <strong>Lic. María Torres</strong>, Gerente de Marketing, Banco
+                Pichincha. Implementamos una campaña basada en datos que
+                incrementó la conversión en un 20%.
+              </p>
+            </div>
+          </div>
 
+          <div class="carousel__controls">
+            <label
+              for="carousel__slide1"
+              class="carousel__control carousel__control--prev"
+              aria-label="Anterior"
+            ></label>
+            <label
+              for="carousel__slide2"
+              class="carousel__control carousel__control--next"
+              aria-label="Siguiente"
+            ></label>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Juan Fernández</p>
+    </footer>
+  </body>
 </html>
