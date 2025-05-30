@@ -1,0 +1,13 @@
+#multimedia {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.multimedia__video {
+  width: 60%;
+  aspect-ratio: 16 / 9;
+  border: none;
+}

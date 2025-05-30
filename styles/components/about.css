@@ -1,9 +1,9 @@
 #about {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem;
-  margin: 2rem 0;
+  padding: 2rem 2rem;
   gap: 5rem;
 }
 
@@ -27,3 +27,4 @@
 #about .about-heading__role {
   font-weight: var(--fw-light);
 }
+

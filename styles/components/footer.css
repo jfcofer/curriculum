@@ -5,4 +5,26 @@ footer {
   color: var(--color-on-primary-container);
   font-size: var(--step-1);
   font-weight: var(--fw-bold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__icon {
+  width: 2rem;
+  transition: color 0.2s ease;
+}
+
+.footer__icon:hover,
+.footer__icon:focus {
+  color: white;
+}
+
+.footer__text {
+  flex: 1 1 auto;
 }
