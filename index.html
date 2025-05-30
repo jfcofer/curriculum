@@ -10,26 +10,48 @@
       name="description"
       content="CV, Curriculum Vitae, Nombre Apellido, Experiencia, Educación"
     />
-    <meta name="author" content="Juan Fernández" />
+    <meta name="author" content="Juan Francisco Fernández" />
     <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My CV | Juan Francisco Fernández</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/scale.css" />
     <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/theme.css" />
+    <link
+      rel="stylesheet"
+      href="styles/theme/light.css"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/theme/dark.css"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/theme/light.css"
+      media="(prefers-color-scheme: no-preference)"
+    />
     <link rel="stylesheet" href="styles/components/header.css" />
-    <link rel="stylesheet" href="styles/components/section.css" />
+    <link rel="stylesheet" href="styles/components/about.css" />
+    <link rel="stylesheet" href="styles/components/skills.css" />
+    <link rel="stylesheet" href="styles/components/experience.css" />
+    <link rel="stylesheet" href="styles/components/projects.css" />
+    <link rel="stylesheet" href="styles/components/education.css" />
+    <link rel="stylesheet" href="styles/components/references.css" />
+    <link rel="stylesheet" href="styles/components/contact.css" />
+    <link rel="stylesheet" href="styles/components/cta.css" />
     <link rel="stylesheet" href="styles/components/footer.css" />
-    <title>My CV | Juan Fernández</title>
   </head>
 
   <body>
     <header class="header">
-      <h1 class="header__title">Juan Fernández</h1>
+      <h1 class="header__title">Juan Francisco Fernández</h1>
 
       <nav class="navbar">
         <ul class="navbar__list">
@@ -49,11 +71,6 @@
             <a class="navbar__link" href="#education">Educación</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="#certs"
-              >Certificaciones y Reconocimientos</a
-            >
-          </li>
-          <li class="navbar__item">
             <a class="navbar__link" href="#references">Referencias</a>
           </li>
           <li class="navbar__item">
@@ -64,133 +81,295 @@
     </header>
 
     <main>
-      <section id="about" class="about">
-        <h2>Sobre mí</h2>
-        <section class="photo">
-          <div class="photo__container">
-            <img
-              class="photo__image"
-              src="assets/photo.jpg"
-              alt="Foto de Juan Fernández"
-            />
-          </div>
-        </section>
-        <p>
-          Hola, soy Juan Fernández, un apasionado desarrollador web con
-          experiencia en la creación de aplicaciones interactivas y dinámicas.
-          Me encanta aprender nuevas tecnologías y mejorar mis habilidades
-          constantemente.
-        </p>
+      <section id="about">
+        <img
+          class="photo"
+          src="assets/photo.jpg"
+          alt="Foto de Juan Francisco Fernández"
+        />
+        <h2 class="about-heading">
+          <span class="about-heading__name"> Juan Francisco Fernández </span>
+          <span class="about-heading__role"> Desarrollador </span>
+        </h2>
       </section>
 
       <section id="skills">
-        <h2>Habilidades</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque non
-          molestias itaque veniam optio cupiditate deleniti inventore.
-          Excepturi, qui, minima possimus doloremque, consequatur in maiores
-          animi ducimus officia omnis et.
-        </p>
+        <h2 class="skills__heading">Habilidades</h2>
+        <ul class="skills__list">
+          <li class="skills__item">
+            <article class="skill-card">
+              <h3 class="skill-card__name">HTML</h3>
+
+              <svg
+                class="skill-card__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                aria-hidden="true"
+              >
+                <path
+                  fill="#e44d26"
+                  d="M107.6 471l-33-370.4h362.8l-33 370.2L255.7 512"
+                />
+                <path fill="#f16529" d="M256 480.5V131H404.3L376 447" />
+                <path
+                  fill="#ebebeb"
+                  d="M142 176.3h114v45.4h-64.2l4.2 46.5h60v45.3H154.4M156.4 336.3H202l3.2 36.3 50.8 13.6v47.4l-93.2-26"
+                />
+                <path
+                  fill="#fff"
+                  d="M369.6 176.3H255.8v45.4h109.6M361.3 268.2H255.8v45.4h56l-5.3 59-50.7 13.6v47.2l93-25.8"
+                />
+              </svg>
+            </article>
+          </li>
+          <li class="skills__item">
+            <article class="skill-card">
+              <h3 class="skill-card__name">CSS</h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="512"
+                height="512"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="#264de4"
+                  d="M71.357 460.819L30.272 0h451.456l-41.129 460.746L255.724 512z"
+                />
+                <path
+                  fill="#2965f1"
+                  d="M405.388 431.408l35.148-393.73H256v435.146z"
+                />
+                <path
+                  fill="#ebebeb"
+                  d="M124.46 208.59l5.065 56.517H256V208.59zM119.419 150.715H256V94.197H114.281zM256 355.372l-.248.066-62.944-16.996-4.023-45.076h-56.736l7.919 88.741 115.772 32.14.26-.073z"
+                />
+                <path
+                  fill="#fff"
+                  d="M255.805 208.59v56.517H325.4l-6.56 73.299-63.035 17.013v58.8l115.864-32.112.85-9.549 13.28-148.792 1.38-15.176 10.203-114.393H255.805v56.518h79.639L330.3 208.59z"
+                />
+              </svg>
+            </article>
+          </li>
+          <li class="skills__item">
+            <article class="skill-card">
+              <h3 class="skill-card__name">Python</h3>
+              <svg
+                width="800px"
+                height="800px"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M13.0164 2C10.8193 2 9.03825 3.72453 9.03825 5.85185V8.51852H15.9235V9.25926H5.97814C3.78107 9.25926 2 10.9838 2 13.1111L2 18.8889C2 21.0162 3.78107 22.7407 5.97814 22.7407H8.27322V19.4815C8.27322 17.3542 10.0543 15.6296 12.2514 15.6296H19.5956C21.4547 15.6296 22.9617 14.1704 22.9617 12.3704V5.85185C22.9617 3.72453 21.1807 2 18.9836 2H13.0164ZM12.0984 6.74074C12.8589 6.74074 13.4754 6.14378 13.4754 5.40741C13.4754 4.67103 12.8589 4.07407 12.0984 4.07407C11.3378 4.07407 10.7213 4.67103 10.7213 5.40741C10.7213 6.14378 11.3378 6.74074 12.0984 6.74074Z"
+                  fill="url(#paint0_linear_87_8204)"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M18.9834 30C21.1805 30 22.9616 28.2755 22.9616 26.1482V23.4815L16.0763 23.4815L16.0763 22.7408L26.0217 22.7408C28.2188 22.7408 29.9998 21.0162 29.9998 18.8889V13.1111C29.9998 10.9838 28.2188 9.25928 26.0217 9.25928L23.7266 9.25928V12.5185C23.7266 14.6459 21.9455 16.3704 19.7485 16.3704L12.4042 16.3704C10.5451 16.3704 9.03809 17.8296 9.03809 19.6296L9.03809 26.1482C9.03809 28.2755 10.8192 30 13.0162 30H18.9834ZM19.9015 25.2593C19.1409 25.2593 18.5244 25.8562 18.5244 26.5926C18.5244 27.329 19.1409 27.9259 19.9015 27.9259C20.662 27.9259 21.2785 27.329 21.2785 26.5926C21.2785 25.8562 20.662 25.2593 19.9015 25.2593Z"
+                  fill="url(#paint1_linear_87_8204)"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_87_8204"
+                    x1="12.4809"
+                    y1="2"
+                    x2="12.4809"
+                    y2="22.7407"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#327EBD" />
+                    <stop offset="1" stop-color="#1565A7" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint1_linear_87_8204"
+                    x1="19.519"
+                    y1="9.25928"
+                    x2="19.519"
+                    y2="30"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFDA4B" />
+                    <stop offset="1" stop-color="#F9C600" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </article>
+          </li>
+        </ul>
       </section>
 
       <section id="experience">
-        <h2>Experiencia Laboral</h2>
-        <ol>
+        <h2 class="experience__heading">Experiencia Laboral</h2>
+        <ol class="experience__list">
           <li>
-            <h3>Ayudante de Investigación</h3>
-            <p>Fecha de inicio - Fecha de finalización</p>
-            <p>Descripción de las responsabilidades y logros.</p>
+            <article class="experience__item">
+              <div class="job-card">
+                <h3 class="job-card__role">Ayudante de Investigación</h3>
+                <p class="job-card__description">
+                  Descripción de las responsabilidades y logros.
+                </p>
+              </div>
+              <p class="job-timeline">
+                <time datetime="2021-02">Feb 2021</time>
+                <span aria-hidden="true">–</span>
+                <time datetime="2023-07">Jul 2023</time>
+              </p>
+            </article>
           </li>
           <li>
-            <h3>Desarrollador Frontend en ABC Corp</h3>
-            <p>Fecha de inicio - Fecha de finalización</p>
-            <p>Descripción de las responsabilidades y logros.</p>
+            <article class="experience__item">
+              <div class="job-card">
+                <h3 class="job-card__role">Ayudante de Investigación</h3>
+                <p class="job-card__description">
+                  Descripción de las responsabilidades y logros.
+                </p>
+              </div>
+              <p class="job-timeline">
+                <time datetime="2021-02">Feb 2021</time>
+                <span aria-hidden="true">–</span>
+                <time datetime="2023-07">Jul 2023</time>
+              </p>
+            </article>
           </li>
         </ol>
       </section>
 
       <section id="projects">
-        <h2>Proyectos</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-          neque in optio recusandae. At fuga asperiores laborum qui. Dolor
-          consequuntur adipisci nesciunt laudantium ex error, quasi doloremque
-          eius vero eligendi.
-        </p>
+        <h2 class="projects__heading">Proyectos</h2>
+        <ul class="projects__list">
+          <li>
+            <article class="project-card">
+              <h3 class="project-card__name">Tasks Flutter App</h3>
+              <p class="project-card__description">
+                Flutter App Using BLoC Architecture for SQLite databases
+              </p>
+            </article>
+          </li>
+          <li>
+            <article class="project-card">
+              <h3 class="project-card__name">Online Image Compresser</h3>
+              <p class="project-card__description">
+                Online image compressor using React and FastAPI alongside
+                Huffman Algorithm
+              </p>
+            </article>
+          </li>
+        </ul>
       </section>
 
       <section id="education">
-        <h2>Educación</h2>
-        <table class="cv-table cv-table--borderless">
-          <thead class="cv-table__head">
-            <tr class="cv-table__row">
-              <th class="cv-table__cell cv-table__cell--header">Year</th>
-              <th class="cv-table__cell cv-table__cell--header">Institution</th>
-              <th class="cv-table__cell cv-table__cell--header">Degree</th>
+        <h2 class="education__heading">Educación</h2>
+        <table class="education-table">
+          <thead>
+            <tr>
+              <th class="education-table__header">Year</th>
+              <th class="education-table__header">Institution</th>
+              <th class="education-table__header">Degree</th>
             </tr>
           </thead>
-          <tbody class="cv-table__body">
-            <tr class="cv-table__row">
-              <td class="cv-table__cell">2021–2025</td>
-              <td class="cv-table__cell">ESPOL, Guayaquil</td>
-              <td class="cv-table__cell">B.Sc. Computer Science</td>
+          <tbody>
+            <tr>
+              <td class="education-table__cell">2021–2025</td>
+              <td class="education-table__cell">ESPOL, Guayaquil</td>
+              <td class="education-table__cell">B.Sc. Computer Science</td>
             </tr>
-            <tr class="cv-table__row">
-              <td class="cv-table__cell">2019–2021</td>
-              <td class="cv-table__cell">
+            <tr>
+              <td class="education-table__cell">2019–2021</td>
+              <td class="education-table__cell">
                 Unidad Educativa Bernardino Echeverria
               </td>
-              <td class="cv-table__cell">High School Diploma</td>
+              <td class="education-table__cell">High School Diploma</td>
             </tr>
           </tbody>
         </table>
       </section>
 
-      <section id="certs">
-        <h2>Certificaciones y Reconocimientos</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-          neque in optio recusandae. At fuga asperiores laborum qui. Dolor
-          consequuntur adipisci nesciunt laudantium ex error, quasi doloremque
-          eius vero eligendi.
-        </p>
-      </section>
-
       <section id="references">
-        <h2>Referencias</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-          neque in optio recusandae. At fuga asperiores laborum qui. Dolor
-          consequuntur adipisci nesciunt laudantium ex error, quasi doloremque
-          eius vero eligendi.
-        </p>
-      </section>
-      <section id="contact">
-        <h2>Contacto</h2>
-        <ul>
-          <li><strong>Email:</strong> jfrancisco.fernandez.ramos@gmail.com</li>
-          <li><strong>Telephone:</strong> +593 81 3030 74</li>
+        <h2 class="references__heading">Referencias</h2>
+        <ul class="references__list">
           <li>
-            <strong>Ubicacion:</strong> Guayaquil, Ecuador
-            <section class="contact-map">
-              <div class="map__container">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0151793696036!2d-79.96714432574477!3d-2.147874837173273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Politecnica%20del%20Litoral!5e0!3m2!1sen!2sec!4v1747680061345!5m2!1sen!2sec"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-              <div class="map-info">
-                <p>
-                  Escuela Superior Politécnica del Litoral <br />
-                  Guayaquil, Ecuador
-                </p>
-              </div>
-            </section>
+            <article class="reference-card">
+              <blockquote class="reference-card__quote">
+                "Andrea hizo un trabajo excepcional en nuestro proyecto de
+                análisis de datos, aportando insights clave."
+              </blockquote>
+              <p class="reference-person">
+                <span class="reference-person__name">Dr. Carla Méndez </span>
+                <span class="reference-person__description">
+                  Directora de Investigación, Universidad de Guayaquil. Colaboré
+                  con Andrea en un estudio de comportamiento del consumidor,
+                  donde demostró gran capacidad analítica.
+                </span>
+              </p>
+            </article>
+          </li>
+          <li>
+            <article class="reference-card">
+              <blockquote class="reference-card__quote">
+                "Andrea hizo un trabajo excepcional en nuestro proyecto de
+                análisis de datos, aportando insights clave."
+              </blockquote>
+              <p class="reference-person">
+                <span class="reference-person__name">Dr. Carla Méndez </span>
+                <span class="reference-person__description">
+                  Directora de Investigación, Universidad de Guayaquil. Colaboré
+                  con Andrea en un estudio de comportamiento del consumidor,
+                  donde demostró gran capacidad analítica.
+                </span>
+              </p>
+            </article>
           </li>
         </ul>
-        <form class="contact-section__form" action="#" method="post">
+      </section>
+
+      <section id="contact">
+        <h2 class="contact__heading">Contacto</h2>
+        <div class="contact__info">
+          <ul class="contact__list">
+            <li>
+              <article class="contact-card">
+                <h3 class="contact-card__field">Email:</h3>
+                <p class="contact-card__description">
+                  jfrancisco.fernandez.ramos@gmail.com
+                </p>
+              </article>
+            </li>
+            <li>
+              <article class="contact-card">
+                <h3 class="contact-card__field">Telephone:</h3>
+                <p class="contact-card__description">+593 81 303 074</p>
+              </article>
+            </li>
+            <li>
+              <article class="contact-card">
+                <h3 class="contact-card__field">Ubicacion:</h3>
+                <p class="contact-card__description">Guayaquil, Ecuador</p>
+              </article>
+            </li>
+          </ul>
+          <article class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0151793696036!2d-79.96714432574477!3d-2.147874837173273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Politecnica%20del%20Litoral!5e0!3m2!1sen!2sec!4v1747680061345!5m2!1sen!2sec"
+              class="map__embedding"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <p class="map__info">
+              <span class="map__place">
+                Escuela Superior Politécnica del Litoral <br />
+              </span>
+              <span class="map__city"> Guayaquil, Ecuador </span>
+            </p>
+          </article>
+        </div>
+      </section>
+      <section id="cta-form">
+        <form class="form" action="#" method="post">
           <div class="form-group">
             <label for="name">Nombre</label>
             <input
@@ -223,99 +402,11 @@
           </div>
           <button type="submit" class="btn">Enviar Mensaje</button>
         </form>
-        <section class="video">
-          <div class="video__container">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/toPYhYAd_JY?si=IdHJjCSBTtyLjl5l"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </section>
-      </section>
-      <section id="referencias" class="references">
-        <h2 class="references__title">Referencias</h2>
-        <div class="carousel">
-          <input
-            type="radio"
-            name="carousel"
-            id="carousel__slide1"
-            class="carousel__toggle"
-            checked
-          />
-          <input
-            type="radio"
-            name="carousel"
-            id="carousel__slide2"
-            class="carousel__toggle"
-          />
-          <input
-            type="radio"
-            name="carousel"
-            id="carousel__slide3"
-            class="carousel__toggle"
-          />
-
-          <div class="carousel__slides">
-            <div class="carousel__slide">
-              <blockquote class="carousel__quote">
-                "Andrea hizo un trabajo excepcional en nuestro proyecto de
-                análisis de datos, aportando insights clave."
-              </blockquote>
-              <p class="carousel__person">
-                <strong>Dr. Carla Méndez</strong>, Directora de Investigación,
-                Universidad de Guayaquil. Colaboré con Andrea en un estudio de
-                comportamiento del consumidor, donde demostró gran capacidad
-                analítica.
-              </p>
-            </div>
-            <div class="carousel__slide">
-              <blockquote class="carousel__quote">
-                "La dedicación y el profesionalismo de Andrea elevaron el
-                estándar de nuestras herramientas de BI."
-              </blockquote>
-              <p class="carousel__person">
-                <strong>Ing. Luis Pérez</strong>, Jefe de BI, TIA Supermercados.
-                Trabajamos juntos en la optimización del dashboard financiero
-                que redujo tiempos de reporte en 50%.
-              </p>
-            </div>
-            <div class="carousel__slide">
-              <blockquote class="carousel__quote">
-                "Su enfoque innovador en visualización de datos transformó la
-                forma en que presentamos resultados."
-              </blockquote>
-              <p class="carousel__person">
-                <strong>Lic. María Torres</strong>, Gerente de Marketing, Banco
-                Pichincha. Implementamos una campaña basada en datos que
-                incrementó la conversión en un 20%.
-              </p>
-            </div>
-          </div>
-
-          <div class="carousel__controls">
-            <label
-              for="carousel__slide1"
-              class="carousel__control carousel__control--prev"
-              aria-label="Anterior"
-            ></label>
-            <label
-              for="carousel__slide2"
-              class="carousel__control carousel__control--next"
-              aria-label="Siguiente"
-            ></label>
-          </div>
-        </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <p>&copy; 2025 Juan Fernández</p>
+    <footer>
+      <p>&copy; 2025 Juan Francisco Fernández</p>
     </footer>
   </body>
 </html>

@@ -1,0 +1,29 @@
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  margin: 2rem 0;
+  gap: 5rem;
+}
+
+#about .photo {
+  margin: 2rem 0;
+  overflow: hidden;
+  max-width: 20%;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about .about-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#about .about-heading__name {
+  font-size: var(--step-2);
+}
+
+#about .about-heading__role {
+  font-weight: var(--fw-light);
+}

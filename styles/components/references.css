@@ -1,0 +1,49 @@
+#references {
+  background-color: var(--color-surface-bright);
+  color: var(--color-on-surface);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem;
+  width: 100%;
+  text-align: center;
+}
+.references__heading {
+  width: 100%;
+  font-size: var(--step-2);
+  font-weight: var(--fw-bold);
+  margin-bottom: 1.5rem;
+}
+
+.references__list {
+  list-style: none;
+  display: grid;
+  width: 100%;
+  max-width: 100%;
+  grid-gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+.reference-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reference-card__quote {
+}
+
+.reference-person {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.reference-person__name {
+  font-weight: var(--fw-bold);
+}
+.reference-person__description {
+  font-weight: var(--fw-light);
+}

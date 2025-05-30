@@ -1,7 +1,7 @@
 /* Section: Header */
 .header {
-  background-color: var(--color-primary);
-  color: var(--color-on-primary);
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -9,8 +9,9 @@
 }
 /* Element: header__title */
 .header__title {
-  font-size: 2rem;
+  font-size: var(--step-3);
   margin-bottom: 2rem;
+  font-weight: var(--fw-bold);
 }
 
 /* Element: Navigation */
@@ -28,8 +29,10 @@
   position: relative;
   padding: 1rem;
   background-color: var(--color-primary-container);
+  border-radius: 2rem;
 }
 
 .navbar__link:hover {
-  background-color: var(--color-secondary-container);
+  background-color: var(--color-primary);
+  color: var(--color-on-primary)
 }

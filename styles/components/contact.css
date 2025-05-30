@@ -1,0 +1,73 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+  width: 100%;
+}
+.contact__heading {
+  text-align: center;
+  font-size: var(--step-2);
+  font-weight: var(--fw-bold);
+  margin-bottom: 1.5rem;
+}
+
+.contact__info{
+  display: flex;
+}
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 0.7rem;
+  flex: 1 1 auto;
+}
+
+.contact-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+  border-radius: 1.3rem;
+  text-align: start;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.contact-card__field {
+  font-size: var(--step-1);
+  font-weight: var(--fw-bold);
+}
+.contact-card__description {
+  font-weight: var(--fw-light);
+}
+
+.contact-card:hover,
+.contact-card:focus-visible {
+  transform: translateY(3px);
+}
+
+.map{
+  flex: 2 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.map__info{
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: var(--color-secondary-container);
+  color: var(--color-on-secondary-container);
+}
+
+.map__city{
+  font-weight: var(--fw-bold);
+}

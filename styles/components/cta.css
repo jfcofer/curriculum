@@ -1,0 +1,44 @@
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 2rem;
+}
+
+.form-group {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+  gap: 0.2rem;
+}
+.form-group label {
+  font-weight: var(--fw-bold);
+  margin-left: 1rem;
+}
+
+.form-group input,
+textarea {
+  border-radius: 1.5rem;
+  padding: 1rem;
+  background-color: var(--color-surface-bright);
+  color: var(--color-on-surface);
+  border: 0.1rem solid var(--color-outline);
+}
+
+.form button {
+  margin: 1rem 0;
+  padding: 1.25rem;
+  border-radius: 2rem;
+  background-color: var(--color-secondary);
+  color: var(--color-on-secondary);
+  transition:
+    background-color 0.3s ease-in-out,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.form button:hover,
+.form button:focus-visible {
+  background-color: var(--color-tertiary);
+  transform: translateY(3px);
+}
